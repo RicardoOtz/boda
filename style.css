@@ -1,0 +1,555 @@
+
+        /* Estilos para la página #ffe9da original */
+        body {
+            font-family: 'Noto Serif TC', serif;
+            margin: 0;
+        }
+        header {
+            background: url(/Source/cover.jpg) no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+        }
+        #content {
+            padding: 20px;
+        }
+        main {
+            padding-top: 60px;
+        }
+        #popup {
+            font-family: 'Noto Serif TC', serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            z-index: 9999; /* Asegura que el popup esté en el frente */ 
+           
+        }
+        #popup-content {
+          background-color: #ffffff; 
+          width :70%; 
+          padding :20px; 
+          text-align:center; 
+             border-radius: 10px;
+        }
+        #accept-button {
+            margin-top: 20px; 
+            background-color: #ada86d;
+            border: none; 
+        }
+        #pause-button,
+        #play-button {
+          display:none; 
+          position :fixed; 
+          top :10px; 
+          right :10px; 
+          background:none; 
+          border:none; 
+          cursor:pointer; 
+          color :goldenrod; 
+          font-size :24px; 
+          outline:none;
+          z-index: 9999; /* Asegura que los botones estén en el frente */
+        }
+        h1 {
+          font-family: 'Noto Serif TC', serif; 
+          color : #ffffff; 
+          font-size :90px;
+          text-shadow: -5px 3px 3px #808080;
+            align-items:center; 
+             justify-content:center;
+        }
+
+        #spacer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #ffe9da;
+          padding: 20px;
+          text-align: center;
+        }
+
+        #spacer p {
+          margin: 0;
+        }
+
+       
+        /* Estilos para el carrusel */
+
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 33.75em;
+            overflow: hidden;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .carousel-inner {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            background: none;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .carousel-button.left {
+            left: 20px;
+        }
+
+        .carousel-button.right {
+            right: 20px;
+        }
+       
+        .centered-paragraph {
+            text-align: center;
+        }
+
+        .centered-paragraph p {
+            display: inline-block;
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 90%;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: bold;
+            color: #5e5e5e;
+            font-size: 18px;
+            
+        }
+
+        /*MAPA*/
+        .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.map-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.centered-paragraph {
+  text-align: center;
+  margin: 0;
+}
+
+#location-button {
+  background-color: #ada86d;
+  border: none;
+}
+
+
+        /*titulo ceremonia*/
+        .tituloceremony-container {
+              background-color: #ffffff;
+              color: #5e5e5e;
+              padding: 20px;
+              border-radius: 10px;
+              text-align: center;
+              margin-top: 20px;
+        }
+        .tituloceremony-container h2 {
+              margin: 0;
+              font-size: 24px;
+              text-shadow: -5px 3px 3px #808080;
+              font-family: 'Noto Serif TC', serif;
+        }
+
+
+
+        /* informacion religiosa*/
+        .ceremony-container {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 4cm;
+        }
+
+        .ceremony-container h2 {
+              font-size: 24px;
+              text-shadow: -5px 3px 3px #808080;
+              font-family: 'Noto Serif TC', serif;
+              margin: 0;
+              text-align: center; /* Alinea el texto al centro horizontalmente */
+        }
+
+@media screen and (max-width: 768px) {
+        .ceremony-container {
+             height: auto;
+        }
+
+        .ceremony-container h2 {
+             font-size: 24px;
+             text-shadow: -5px 3px 3px #808080;
+             font-family: 'Noto Serif TC', serif;
+             margin: 0;
+             text-align: center; /* Alinea el texto al centro horizontalmente */
+        }
+    }
+        table {
+            margin: 0 auto; /* Centra la tabla horizontalmente */
+        }
+        
+        /* estilos para el titulo de ebndicion*/
+        .bendicion-container {
+          background-color: #ffffff;
+          color: #5e5e5e;
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+          margin-top: 20px;
+        }
+        .bendicion-container p {
+          margin: 0;
+        }
+        .bendicion-container i {
+              margin-right: 5px;
+        }
+
+
+        /* estilos para los nombres*/
+        .blessing-container {
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+        /* Añade la siguiente propiedad para hacerlo más alto */
+        min-height: 180px;
+        /* Añade esta propiedad para centrar verticalmente el contenido */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blessing-container h3 {
+        font-size: 24px;
+        color: #000000;
+        margin-bottom: 5px; /* Agrega un margen inferior para separar los nombres */
+    }
+
+    .blessing-container p {
+        color: #000000;
+        font-size: 20px;
+    }
+        
+    .blessing-container i {
+        margin-left: 5px; /* Ajusta el espaciado entre el título y el icono según tus preferencias */
+        font-size: 20px; /* Ajusta el tamaño del icono según tus preferencias */
+    }
+
+        /* Estilos para la sección SALÓN */
+        #salon-section {
+            background-color: #ffffff;
+              color: #5e5e5e;
+              padding: 20px;
+              border-radius: 10px;
+              text-align: center;
+              margin-top: 20px;
+        }
+
+        #salon-section h2 {
+            margin: 0;
+              font-size: 24px;
+              text-shadow: -5px 3px 3px #808080;
+              font-family: 'Noto Serif TC', serif;
+        }
+
+    /* Estilos para la sección del mapa del salon*/
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .map-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #location-button {
+            background-color: #ada86d;
+            border: none;
+        }
+
+         /* Estilos para la sección DRESS CODE */
+        #dress-code-section {
+            background-color: #ffffff;
+            color: #5e5e5e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #dress-code-section h3 {
+            margin: 0;
+            font-size: 24px;
+            text-shadow: -5px 3px 3px #808080;
+            font-family: 'Noto Serif TC', serif;
+        }
+        
+        #dress-code-section p {
+            font-size: 18px;
+            font-family: 'Noto Serif TC', serif;
+            margin-bottom: 10px;
+        }
+
+    
+        /* Estilos para el icono del Dress Code */
+        .dress-code-icon {
+            width: 200px;
+            height: 200px;
+        }
+
+        .img-fathers{
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+
+        }
+
+
+
+        /* estilo para el aviso de ñiños*/
+
+        #sin-ninos-section {
+            background-color: #ffffff;
+            color: #5e5e5e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #sin-ninos-section h2 {
+            margin: 0;
+            font-size: 24px;
+            text-shadow: -5px 3px 3px #808080;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        #sin-ninos-section p {
+            font-size: 18px;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        .child-icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Estilos para la nueva sección MESA DE REGALOS */
+        #mesa-de-regalos-section {
+            background-color: #ffffff;
+            color: #5e5e5e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #mesa-de-regalos-section h2 {
+            margin: 0;
+            font-size: 24px;
+            text-shadow: -5px 3px 3px #808080;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        #mesa-de-regalos-section p {
+            font-size: 18px;
+            font-family: 'Noto Serif TC', serif;
+            margin-bottom: 10px;
+        }
+
+        #mesa-de-regalos.section h3{
+            font-size: 20px;
+            font-family: 'Noto Serif TC', serif;
+            font-style: bold;
+        }
+
+        #mesa-de-regalos-button {
+            background-color: #ada86d;
+            border: none;
+            cursor: pointer;
+            padding: 8px 15px; /* Tamaño del botón más pequeño */
+            color: #ffffff;
+            font-size: 16px; /* Tamaño de fuente reducido */
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-family: 'Noto Serif TC', serif;
+            text-decoration: none;
+        }
+
+        #mesa-de-regalos-button:hover {
+            background-color: #cab700;
+        }
+
+        .store-icon{
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+        }
+
+        /* Estilos para la sección de confirmación de asistencia */
+    .confirmation-form-container {
+        text-align: center;
+        margin-top: 20px;
+        background-color: #ffffff;
+        color: #5e5e5e;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .confirmation-form-container p {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: -5px 3px 3px #808080;
+        font-family: 'Noto Serif TC', serif;
+    }
+
+    .confirmation-form-container a {
+        text-decoration: none;
+    }
+
+    .confirmation-form-container button {
+        background-color: #ada86d;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-family: 'Noto Serif TC', serif;
+        transition: background-color 0.3s ease;
+    }
+
+    .confirmation-form-container button:hover {
+        background-color: #cab700;
+    }
+
+       
+      
+
+        /* hacer que aparezcan las letras del header*/
+        /* Ocultar inicialmente los elementos con la clase "appear" */
+        .appear {
+            opacity: 0;
+          }
+
+      /* Mostrar los elementos con la clase "appear" con una animación */
+         .appear.show {
+             opacity: 1;
+            transition: opacity 1s ease-in-out;
+          }
+        
+        /* Estilos para el contenedor de la frase */
+.frase-container {
+    background-image: url(/Source/beige.jpg);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.img-frase-top{
+            width: 50px;
+            height: 50px;
+        }
+
+        .img-frase{
+            width: 100%;
+            height: auto;
+            
+            
+
+        }
+
+/* Estilos para el elemento con la clase "frase" que esta despues delheader */
+.frase {
+    opacity: 0; /* Establecemos la opacidad inicial en 0 */
+    font-family: 'Noto Serif TC', serif;
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    
+     /* Agregamos bordes redondeados 
+    box-shadow: -5px 4px 8px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
+    padding: 20px;
+    margin-top: 20px;
+    transition: opacity 1s ease-in-out; /* Agregamos una transición de opacidad */
+    
+}
+/*Estilo para frase debajo de la imagen que esta debajo del header */
+.frase-down {
+    opacity: 0; /* Establecemos la opacidad inicial en 0 */
+    font-family: 'Noto Serif TC', serif;
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    
+     /* Agregamos bordes redondeados 
+    box-shadow: -5px 4px 8px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
+    padding: 20px;
+    margin-top: 20px;
+    transition: opacity 1s ease-in-out; /* Agregamos una transición de opacidad */
+    
+}
