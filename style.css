@@ -1,5 +1,4 @@
-
-        /* Estilos para la página #ffe9da original */
+    /* Estilos para la página #ffe9da original */
         body {
             font-family: 'Noto Serif TC', serif;
             margin: 0;
@@ -553,3 +552,26 @@
     transition: opacity 1s ease-in-out; /* Agregamos una transición de opacidad */
     
 }
+
+.date-container{
+    background-image: url(/Source/beige.jpg);
+    max-width: 600px;
+      justify-content: center;
+      align-items: center;
+      margin: 0, auto;
+      padding: 10px;
+}
+
+.date-container p{
+    font-family: 'Noto Serif TC', serif;
+    color: #000000;
+    font-style: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.center-date{
+    width: 350px;
+    height: 630px;
+}
+      
